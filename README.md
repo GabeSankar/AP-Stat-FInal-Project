@@ -93,19 +93,19 @@ and equal probability of each number being drawn. The formula bellow was used to
 
 Then the Z-statistic is used to determine the p value based on a normal distribution sample. The code to calculate such is as follows:
 
-def Total_1PropZTest(r,matrix):
-p_values = [0]*r
-n = np.ravel(matrix).shape[0]
+    def Total_1PropZTest(r,matrix):
+        p_values = [0]*r
+        n = np.ravel(matrix).shape[0]
 
-for i in range(len(p_values)):
-P = Frequency(matrix,i+1)
-P0 = 1/r
-a = (P-P0)
-b = P0*(1-P0)/n
-z = a/math.sqrt(b)
-p_values[i] = norm.cdf(z)
+        for i in range(len(p_values)):
+            P = Frequency(matrix,i+1)
+            P0 = 1/r
+            a = (P-P0)
+            b = P0*(1-P0)/n
+            z = a/math.sqrt(b)
+            p_values[i] = norm.cdf(z)
 
-return p_values
+        return p_values
 The Frequency method is used to get the counts for each individual draw number to determine the proportion.
 Then each p-value is compiled in a list for each catagory and printed to be manually entered into a table.
 
