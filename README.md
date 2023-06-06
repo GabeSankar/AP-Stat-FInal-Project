@@ -271,3 +271,5 @@ The Chi Squared Test had a p-value greater than the threshold of 0.05 meaning th
 The 1 proportion Z-Tests for each white ball number was less than the threshold fo 0.05. This means that we can reject the null hypothesis as the the probabilites for drawing any number is random for the white balls as well.
 
 The KL Divergence tests yeilded values that are near zero implying a relatively close overlap between the real and simulated distribtution, although the metric could seem abit arbitrary they can be qualitatively confirmed when examining the charts with both distributions plotted.
+
+Some limitations of this study include the reduced data size due to the rules change in 2015 for the powerball, furthermore each white ball draw is not independent although each set is an independent draw meaning that the values should be independent due to the lack of mutually exclusive events.
