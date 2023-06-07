@@ -79,8 +79,8 @@ To analyze each white ball and powerball the following conditions had to be met 
 
 The hypothesis for these inference procedures are as follows:
 
-+ H0 = For each digit the white ball draw data proportions are not statistically significant to indicate random data
-+ Ha = For each digit the white ball draw data proportions are statistically significant to claim randomness due to similarity to the random  expected proportion
++ H0 = For a given digit of the white ball the proportion would not match the expected proprtion for the data to be random
++ Ha = For a given digit of the white ball the proportion would match the expected proprtion for the data to be random
 
 ### 5. Z-Test for White Ball Draw
 
